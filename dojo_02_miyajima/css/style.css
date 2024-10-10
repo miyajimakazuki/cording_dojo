@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+.nav_flex {
+top: 71px;
+left: 59px;
+width: 33px;
+height: 13px;
+text-align: left;
+font: normal normal normal 13px/16px Meiryo;
+letter-spacing: 0px;
+color: #24292E;
+opacity: 0.8;
+}
+
+.insta_icon {
+    top: 66px;
+left: 297px;
+width: 20px;
+height: 20px;
+background: transparent url('img/icon-instagram.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.main_visual .mainvisual-pc{
+    display: none;
+}
+
+.main_visual {
+top: 102px;
+left: 0px;
+width: 375px;
+height: 420px;
+background: transparent url('img/mainvisual-sp.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+
+margin-top: 18px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
