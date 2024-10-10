@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+
+a {
+text-decoration: none;
+letter-spacing: 0px;
+color: #24292E;
+opacity: 0.8;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+.boxhead {
+    text-align: center;
+}
+
+/* 1___ header */
+
+#flex_header {
+text-align: center;
+padding: 4%;
+max-width: 960px;
+margin: auto;
+}
+
+#flex_header ul li {
+	display: inline-block;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+
+#flex_header .logo img{
+width: 143px;
+height: auto;
+}
+
+.nav_flex {
+
+text-align: center;
+font: normal normal normal 13px/16px Meiryo;
+letter-spacing: 0px;
+color: #24292E;
+opacity: 0.8;
+
+}
+
+.insta_icon {
+width: 20px;
+height: 20px;
+opacity: 1;
+}
+
+
+
+/* 2___ main_visual */
+
+.main_visual .mainvisual-pc{
+display: none;
+}
+
+
+.main_visual {
+	width: 100%;
+	height: 420px;
+}
+.main_visual img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.section_title {
+text-align: center;
+padding-top: 80px;
+padding-bottom: 49px;
+font: normal normal bold 24px/29px Meiryo;
+letter-spacing: 0px;
+color: #24292E;
+opacity: 1;
+}
+
+
+/* 3___ about */
+
+#about {
+padding: 4%;
+max-width: 960px;
+margin: auto;
+}
+
+#about ul {
+padding-top: 37px;
+padding-bottom: 51px;
+}
+
+
+
+/* 4___ works */
+
+#works {
+padding: 4%;
+max-width: 960px;
+margin: auto;
+}
+
+#works li {
+    padding-bottom: 23px;
+}
+
+
+
+/* 5___ news */
+
+#news {
+    padding: 4%;
+max-width: 960px;
+margin: auto;
+}
+
+#news dt {
+    padding-top: 19px;
+    opacity: 1;
+    font-size: 14px;
+}
+
+
+#news dd {
+    border-bottom: 1px solid #C8C8C8;
+    padding-bottom: 15px;
+    opacity: 1;
+    font-size: 14px;
+}
+
+
+
+/* 6___ contact */
+
+#contact {
+    /* align-items: center; */
+padding: 4%;
+margin-bottom: 70px;
+max-width: 960px;
+margin: auto;
+}
+
+
+
+/* 以下のフォームスタイルはほぼコピペ */
+
+#contact dd input, #contact dd textarea {
+width: 100%;
+border: solid 1px #c8c8c8;
+padding: 10px;
+}
+#contact .button input {
+width: 200px;
+background-color: #24292e;
+color: #fff;
+padding: 15px 0;
+border: solid 1px #24292e;
+}
+
+#contact .button input:hover {
+    background: #fff;
+    color: #24292e;
+  }
+  
+
+#contact dl {
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-content: center;
+  }
+
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
+
+  #contact dd input,
+  #contact dd textarea {
+    width: 100%;
+    border: solid 1px #c8c8c8;
+    padding: 10px;
+  }
+  #contact dd textarea {
+    height: 10rem;
+  }
+  #contact .button {
+    text-align: center;
+  }
+  
+  /* このあたりまで一旦コピペ */
+
+
+
+footer {
+    background-color: #24292e;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer p {
+color: white;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    /* 1___ header */
+    #flex_header {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    #flex_header .logo img{
+        width: 120px;
+        height: auto;
+        }
+ 
+    /* 2___ main_visual */
+    .main_visual .mainvisual-sp{
+        display: none;
+    }
+    .main_visual .mainvisual-pc{
+        display: block;
+    }
+    .main_visual {
+        width: 100%;
+        height: 420px;
+    }
+    .main_visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* 4___ works */
+    #works ul li {
+        width: 30%;
+        display: inline-block;
+        padding-inline: 12px;
+    }
+
+    ul.works_column {
+        text-align: center;
+    }
+
+
+    /* 5___ news */
+
+    #news dl {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      #news dt {
+        width: 20%;
+        border-bottom: solid 1px #c8c8c8;
+        padding: 15px;
+      }
+      #news dd {
+        width: 80%;
+        border-bottom: solid 1px #c8c8c8;
+        padding: 15px;
+      }
+      
+
+    /* 以下のフォームスタイルはほぼコピペ */
+
+    #contact dl {
+        flex-direction: unset;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      #contact dt {
+        width: 15%;
+      }
+      #contact dd {
+        width: 85%;
+        margin-bottom: 10px;
+      }
+}
