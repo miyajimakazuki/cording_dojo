@@ -21,10 +21,16 @@ li {
     list-style: none;
 }
 
-
-.boxhead {
-    text-align: center;
+.all_width {
+  width: 92%;
+max-width: 960px;
+margin-right: auto;
+margin-left: auto;
 }
+
+/* .boxhead {
+    text-align: center;
+} */
 
 /* 1___ header */
 
@@ -96,11 +102,11 @@ opacity: 1;
 
 /* 3___ about */
 
-#about {
+/* #about {
 padding: 4%;
 max-width: 960px;
 margin: auto;
-}
+} */
 
 #about ul {
 padding-top: 37px;
@@ -111,11 +117,11 @@ padding-bottom: 51px;
 
 /* 4___ works */
 
-#works {
+/* #works {
 padding: 4%;
 max-width: 960px;
 margin: auto;
-}
+} */
 
 #works li {
     padding-bottom: 23px;
@@ -125,11 +131,11 @@ margin: auto;
 
 /* 5___ news */
 
-#news {
+/* #news {
     padding: 4%;
 max-width: 960px;
 margin: auto;
-}
+} */
 
 #news dt {
     padding-top: 19px;
@@ -154,10 +160,10 @@ margin: auto;
 
 #contact {
     /* align-items: center; */
-padding: 4%;
+/* padding: 4%; */
 margin-bottom: 70px;
-max-width: 960px;
-margin: auto;
+/* max-width: 960px;
+margin: auto; */
 }
 
 
@@ -229,7 +235,7 @@ footer {
 
     /* 1___ header */
     #flex_header {
-        display: inline-flex;
+        display: flex;
         width: 100%;
         justify-content: space-between;
         align-items: center;
