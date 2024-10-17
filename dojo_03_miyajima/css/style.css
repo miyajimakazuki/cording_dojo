@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+    font-size: 14px;
+}
+
+#header {
+    height: 100vh;
+    background-image: url(../img/mainvisual.jpg);
+    background-size: cover;
+   
+}
+
+#article {
+    max-width: 1200px;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #24292E;
+}
+
+.article_flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.article_title {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #70707080 0% 0% no-repeat padding-box;
+    width: 290px;
+    height: 97px;
+}
+
+.article_title span {
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+
+}
+
+#article .article_flex .achive {
+    /* padding: 0 5%; */
+    background-image: url(../img/magazine-archive.jpg);
+    height: 81vw;
+    width: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+
+}
+
+#article .article_flex .new {
+    /* padding: 0 5%; */
+    background-image: url(../img/magazine-new.jpg);
+    height: 81vw;
+    width: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+
+}
+
+
+#fasion_style {
+    background-image: url(../img/fashion.jpg);
+}
+
+.footer_logo {
+    background-color: #24292E;
+}
+
+@media screen and (min-width: 896px) {
+
+}
