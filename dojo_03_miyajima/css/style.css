@@ -3,17 +3,52 @@
 body {
     font-family: Arial, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
     font-size: 14px;
+    color: #24292E;
 }
+
+li {
+    list-style: none;
+    padding-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 #header {
     height: 100vh;
     background-image: url(../img/mainvisual.jpg);
+    background-position: center top;
     background-size: cover;
-   
 }
 
-#article {
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.max-width {
     max-width: 1200px;
+    margin: 0px auto;
+}
+
+.fullsize {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.max-width p {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.fullsize p {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .section_title {
@@ -21,20 +56,41 @@ body {
     font-size: 24px;
     letter-spacing: 0px;
     color: #24292E;
+    margin: 30px auto 20px;
+}
+
+.button {
+    display: block;
+    border: 1px solid #2A2A2A;
+    width: 133px;
+    padding: 15px;
+    text-align: center;
+    margin: 25px auto;
+    background-color: #F5F5F5;
+}
+
+#article {
+    margin-top: 80px;
+}
+
+#article p {
+    margin-bottom: 35px;
 }
 
 .article_flex {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
 .article_title {
-    text-align: center;
     letter-spacing: 0px;
     color: #FFFFFF;
-    background: #70707080 0% 0% no-repeat padding-box;
-    width: 290px;
+    background-color: #70707080;
+    width: 270px;
     height: 97px;
+    padding-top: 10px;
 }
 
 .article_title span {
@@ -45,34 +101,294 @@ body {
 }
 
 #article .article_flex .achive {
-    /* padding: 0 5%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/magazine-archive.jpg);
-    height: 81vw;
+    background-position: center;
+    background-size: 100%;
+    height: 90vw;
     width: 90%;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 10px auto 20px;
 
 }
 
 #article .article_flex .new {
-    /* padding: 0 5%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/magazine-new.jpg);
-    height: 81vw;
+    background-position: center bottom;
+    background-size: 100%;
+    height: 90vw;
     width: 90%;
     object-fit: cover;
-    margin: 0 auto;
+    margin: 10px auto 20px;
 
 }
 
 
-#fasion_style {
+#fashion_style {
+    display: block;
+    height: 650px;
     background-image: url(../img/fashion.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 35px;
+    margin-bottom: 50px;
+    margin-top: 80px;
 }
 
-.footer_logo {
-    background-color: #24292E;
+.object_fit {
+    width: 100%;
 }
+
+
+#catalog {
+    background-color: #F5F5F5;
+}
+
+.catalog_img {
+    display: flex;
+    max-width: 100%;
+    width: 90vw;
+    height: auto;
+    justify-content: center;
+    padding-top: 5%;
+    margin: auto 5%;
+}
+
+#catalog img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.catalog_column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90vw;
+    height: auto;
+}
+
+#antique {
+    background-color: #F5F5F5;
+}
+
+
+.antique_img {
+    display: flex;
+    max-width: 100%;
+    width: 90vw;
+    /* height: 90vw; */
+    justify-content: center;
+    padding-bottom: 5%;
+    margin: auto 5%;
+}
+
+#antique img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.antique_column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 90vw;
+    height: auto;
+}
+
+#footer li::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+.footer_title {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+#footer {
+    padding: 30px 23px 64px 19px;
+    /* background-color: #333333; */
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+
+
+#footer img {
+    display: flex;
+    margin: 5px auto 33px;
+}
+
+.footercopy {
+    margin: 30px auto 33px;
+    text-align: center;
+}
+
+#footer li {
+    line-height: 1;
+    padding-bottom: 12px;
+}
+
+#footer p {
+    line-height: 2;
+}
+
+#footer p {
+    text-align: left;
+    padding-left: 0px;
+} 
+
+.footer_color {
+    background-color: #333333;
+}
+
 
 @media screen and (min-width: 896px) {
+    .article_flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #article .article_flex .achive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/magazine-archive.jpg);
+        background-position: center;
+        background-size: 100%;
+        height: 31.875vw;
+        width: 31.875vw;
+        object-fit: cover;
+        margin: 10px 10px 20px;
+    
+    }
+    
+    #article .article_flex .new {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/magazine-new.jpg);
+        background-position: center;
+        background-size: 100%;
+        height: 31.875vw;
+        width: 31.875vw;
+        object-fit: cover;
+        margin: 10px 10px 20px;
+    
+    }
+
+    .article_title {
+        width: 250px;
+    }
+
+    #fashion_style {
+        display: block;
+        height: 520px;
+        background-image: url(../img/fashion.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-top: 35px;
+        margin-top: 80px;
+    }
+    .fullsize {
+        max-width: 100%;
+        margin: 0px auto;
+    }
+
+    #catalog .max-width {
+        display: flex;
+        align-items: center;
+    }
+
+    .catalog_img {
+        display: flex;
+        max-width: 100%;
+        width: auto;
+        /* height: 90vw; */
+        justify-content: center;
+        padding-top: 5%;
+        margin-right: 0%;
+    }
+
+    #catalog img{
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .catalog_column {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 85%;
+        height: auto;
+        padding-right: 7.5%;
+    }
+    
+
+    #antique .max-width {
+        display: flex;
+        align-items: center;
+        padding-top: 120px;
+    }
+
+    .antique_img {
+        display: flex;
+        max-width: 100%;
+        width: auto;
+        /* height: 90vw; */
+        justify-content: center;
+        /* padding-top: 5%; */
+        margin-left: 0%;
+    }
+
+    #antique img{
+        width: 90%;
+        height: auto;
+        object-fit: contain;
+        
+    }
+
+    .antique_column {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 85%;
+        height: auto;
+        padding-left: 7.5%;
+    }
+    
+
+    #footer {
+        display: flex;
+        width: 1037px;
+    }
+
+
+    #footer .footer_list {
+        max-width: 100%;
+        width: 400px;
+        margin: 0px auto;
+    }
+
+    #footer img {
+        display: block;
+        margin-left: 0px;
+        margin-top: 80px;
+    }
+
+
+
 
 }
